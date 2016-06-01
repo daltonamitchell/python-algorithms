@@ -18,6 +18,7 @@ Notice that the letter 'a' has code 97, 'b' has code 98, etc., up to
 'z' having code 122.
 """
 
+# pylint: disable=wildcard-import, unused-wildcard-import, undefined-variable
 from expects import *
 
 from lib.caesar_cipher import caesar_cipher
@@ -30,6 +31,6 @@ with description('caesar_cipher'):
         expect(caesar_cipher(3, 'abc')).to(equal('def'))
 
     with it('converts a complex string'):
-        original = 'the quick brown fox jumps over the lazy dog'
-        expected = 'ymj vznhp gwtbs ktc ozrux tajw ymj qfed itl'
-        expect(caesar_cipher(5, original)).to(equal(expected))
+        ORIGINAL = 'the quick brown fox jumps over the lazy dog'
+        EXPECTED = 'ymj vznhp gwtbs ktc ozrux tajw ymj qfed itl'
+        expect(caesar_cipher(5, ORIGINAL)).to(equal(EXPECTED))

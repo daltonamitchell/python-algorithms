@@ -18,16 +18,19 @@ Notice that the letter 'a' has code 97, 'b' has code 98, etc., up to
 'z' having code 122.
 """
 
-def caesar_cipher(offset, str):
-    chars = [ord(letter) for letter in str]
+def caesar_cipher(offset, string):
+    """Return encoded string based on offset"""
+    chars = [ord(letter) for letter in string]
     return ''.join(encode(char, offset) for char in chars)
 
 def encode(char, offset):
+    """Shift any letters by a given offset. Ignore non-letter characters."""
     if char < 97 or char > 122:
         return chr(char)
 
     char += offset
 
-    if char > 122: char -= 26
+    if char > 122:
+        char -= 26
 
     return chr(char)

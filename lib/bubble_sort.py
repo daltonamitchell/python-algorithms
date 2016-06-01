@@ -5,13 +5,14 @@ methodology. (http://en.wikipedia.org/wiki/Bubble_sort)
 """
 
 def bubble_sort(arr):
-    sorted = False
-    while not sorted:
-        sorted = True
+    """Sort an array using the bubble_sort method"""
+    is_sorted = False
+    while not is_sorted:
+        is_sorted = True
         i = 1
         while i < len(arr):
             if arr[i-1] > arr[i]:
-                sorted = False
+                is_sorted = False
                 arr[i-1], arr[i] = arr[i], arr[i-1]
             i += 1
 
