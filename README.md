@@ -11,7 +11,11 @@ The best way to use these examples is to read through the tests to understand wh
 Follow these steps to get started:
 
 1. Clone this repo
-2. More details soon to come...
+2. Run `pip install -r requirements.txt` to install the dependencies. If you need to install `pip`, look [here](https://pip.pypa.io/en/stable/installing/).
+3. Type `mamba` to run the tests. You can type `pylint lib` to check for style/syntax issues. 
+4. All tests are in the `spec/` directory and solutions are located in `lib/`.
+5. Once you understand whats going on, remove the solution code and try to get it working again on your own.
+6. Go forth and conquer!
 
 ## Other Languages
 
@@ -54,4 +58,3 @@ Here are some other resources useful for learning this kind of stuff.
 ## Contribute
 
 If you have trouble running the tests, want to add a new problem or correct something that's not quite right, please open an issue or submit a pull request.
-
