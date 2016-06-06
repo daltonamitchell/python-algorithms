@@ -7,7 +7,7 @@ methodology. (http://en.wikipedia.org/wiki/Bubble_sort)
 # pylint: disable=wildcard-import, unused-wildcard-import, undefined-variable
 from expects import *
 
-from lib.bubble_sort import *
+from lib.bubble_sort import bubble_sort
 
 with description('bubble_sort'):
     with it('works with an empty array'):

@@ -10,9 +10,9 @@ Put two spaces between words and one space between letters.
 # pylint: disable=wildcard-import, unused-wildcard-import, undefined-variable
 from expects import *
 
-from lib.morse_code import *
+from lib.morse_code import morse_encode
 
-with description('morse_code'):
+with description('morse_encode'):
     with it('encodes a simple letter'):
         expect(morse_encode('q')).to(equal('--.-'))
 

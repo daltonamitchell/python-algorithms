@@ -7,7 +7,7 @@ spaces.
 # pylint: disable=wildcard-import, unused-wildcard-import, undefined-variable
 from expects import *
 
-from lib.letter_count import *
+from lib.letter_count import letter_count
 
 with description('letter_count'):
     with it('handles a simple case'):

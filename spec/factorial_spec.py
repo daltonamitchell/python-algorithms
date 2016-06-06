@@ -11,7 +11,7 @@ For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
 # pylint: disable=wildcard-import, unused-wildcard-import, undefined-variable
 from expects import *
 
-from lib.factorial import *
+from lib.factorial import factorial
 
 with description('factorial'):
     with it('returns 1 for 0'):

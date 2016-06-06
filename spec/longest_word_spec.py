@@ -6,7 +6,7 @@ the string.
 # pylint: disable=wildcard-import, unused-wildcard-import, undefined-variable
 from expects import *
 
-from lib.longest_word import *
+from lib.longest_word import longest_word
 
 with description('longest_word'):
     with it('handles a simple string'):
