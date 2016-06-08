@@ -19,9 +19,6 @@ from expects import *
 from lib.fizz_buzz import fizz_buzz
 
 with description('fizz_buzz'):
-    # with _it('returns an array'):
-    #   expect(fizz_buzz).to be_a(Array)
-
     with context('when no parameters are given'):
         with it('outputs 100 items'):
             expect(len(fizz_buzz())).to(equal(100))
